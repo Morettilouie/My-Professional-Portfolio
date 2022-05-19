@@ -6,41 +6,78 @@
         <title>Professional Portfolio</title>
     </head>
     <body>
+        <!-- Header -->
         <header>
             <h1>
                 <a href="#">My Portfolio</a>
             </h1>
             <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#my-skills">My Skills</a> 
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a> 
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact Me</a> 
-                    </li>
-                </ul>
+                <a href="#about-me">About Me</a>
+                    
+                <a href="#skills">Skills</a> 
+                    
+                <a href="#projects">Projects</a> 
+                    
+                <a href="#contact-info">Contact Info</a> 
             </nav>
         </header>
 
-        <section>
-            <div id="about-me">
-                <h2>About Me</h2>
+        <section class="hero"></section>
+
+        <section id="projects">
+            <h2 class="section-title">
+                Projects
+            </h2>
+            <div class="projects">
+                <div class="runbuddy">
+                    <a href="https://morettilouie.github.io/runbuddy2/"><img src="./assets/images/hero-bg.jpg" alt="" class="project-img"></a>
+                    <h3>Run Buddy</h3>
+                    <h4>HTML, CSS</h4>
+                </div>
+                <div class="robot-gladiators">
+                    <a href="#"><img src="./assets/images/robot-gladiators-thumbnail.jpg" alt="" class="project-img"></a>
+                    <h3>(coming soon) Robot Gladiators</h3>
+                    <h4>HTML, CSS, JavaScript</h4>
+                </div>
             </div>
-            <div id="my-skills">
-                <h2>My Skills</h2>
+            
+        </section>
+        <section id="about-me">
+            
+            <h2 class="section-title">
+                About Me
+            </h2>
+            <div class="about-me">
+                <div class="my-info">
+                    <p>Studying to be a full stack web developer at Washington University Bootcamp.</p>
+                </div>
+                <div class="washu">
+                    <img src="./assets/images/WashU_St._Louis_seal.svg.png" alt="Washington University logo" class="washu-image">
+                </div>
             </div>
-            <div id="projects">
-                <h2>Projects</h2>
+            
+        </section>
+
+        <section id="skills" class="skills">
+            <div>
+                <h2 class="section-title skills-header">
+                    My Skills
+                </h2>
             </div>
-            <div id="contact-me">
-                <h2>Contact Me</h2>
+            <div class="skills-list">
+                <p><span>HTML</span> <span>CSS</span> <span>JavaScript</span></p>
             </div>
+            </section>
+
+        
+
+        <section id="contact-info">
+            <div>
+                <h2 class="section-title">
+                    Contact Me
+                </h2>
+            </div>
+            
         </section>
         
     </body>
