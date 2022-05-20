@@ -10,14 +10,18 @@ header{
     align-items: left;
     padding: 20px 35px;
     background-color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    z-index: 9999;
 }
 
 h1 a {
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     text-decoration: none;
     padding: 20px;
-    line-height: 2;
+    line-height: 1.5;
 }
 nav {
     display: flex;
@@ -42,8 +46,12 @@ nav a {
 }
 
 .section-title {
+    text-align: center;
     font-size: 30px;
     line-height: 50px;
+    border-bottom: 3px solid white;
+    padding-bottom: 20px;
+    text-decoration: underline;
 }
 .about-me {
     display: flex;
@@ -62,22 +70,10 @@ nav a {
     width: 200px;
 }
 
-.skills {
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-}
-.skills-header {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 400px;
-}
 .skills-list {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 300px;
 }
 .skills-list span {
     background-color: black;
@@ -86,8 +82,20 @@ nav a {
 
 .projects {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.projects div {
+    border: 3px solid black;
+    height: 450px;
+    width: 250px;
+    background-color: silver;
 }
 .project-img {
-    width: 50%;
+    height: 83%;
+    width: 100%;
+}
+.projects .project-img:hover {
+    opacity: .7;
 }
